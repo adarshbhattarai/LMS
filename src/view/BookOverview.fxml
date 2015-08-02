@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="350.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="business.Book">
+  <!-- TODO Add Nodes -->
+  <children>
+    <TableView fx:id="bookTable" editable="true" prefHeight="350.0" prefWidth="600.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+      <columns>
+        <TableColumn prefWidth="75.0" text="ISBN" fx:id="isbnColumn"  />
+        <TableColumn prefWidth="82.0" text="Title" fx:id="titleColumn" />
+        <TableColumn prefWidth="82.0" text="Max. Checkout Length" fx:id="maxCheckoutLengthColumn" />
+        <TableColumn prefWidth="75.0" text="Authors" fx:id="authorsColumn" />
+      </columns>
+    </TableView>
+  </children>
+</AnchorPane>
+

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="business.DashboardController">
+  <children>
+    <Pane layoutX="0.0" layoutY="-7.0" prefHeight="474.0" prefWidth="804.0000999999975">
+      <children>
+        <HBox id="HBox" alignment="CENTER" layoutX="0.0" layoutY="5.0" spacing="5.0">
+          <children>
+            <HBox id="HBox" alignment="CENTER" spacing="5.0">
+              <children>
+                <Pane id="headerPane" prefHeight="84.0" prefWidth="804.0">
+                  <children>
+                    <Label alignment="CENTER" layoutX="154.0" layoutY="-2.0" prefHeight="80.0" prefWidth="600.0" text="Library Management System" textAlignment="CENTER" textFill="BLACK" textOverrun="WORD_ELLIPSIS">
+                      <font>
+                        <Font name="System Bold Italic" size="33.0" />
+                      </font>
+                    </Label>
+                  </children>
+                </Pane>
+              </children>
+            </HBox>
+          </children>
+        </HBox>
+        <Button layoutX="21.0" layoutY="100.0" mnemonicParsing="false" onAction="#handleAddNewMemberTask" prefHeight="30.0" prefWidth="140.0" text="Add New Member" />
+        <Button layoutX="21.0" layoutY="150.0" mnemonicParsing="false" onAction="#handleAddNewBookTask" prefHeight="30.0" prefWidth="140.0" text="Add New Book" />
+        <Button layoutX="21.0" layoutY="200.0" mnemonicParsing="false" onAction="#handleAddBookCopyTask" prefHeight="30.0" prefWidth="140.0" text="Add Book Copy" />
+        <Button layoutX="21.0" layoutY="250.0" mnemonicParsing="false" onAction="#handleCheckoutBookTask" prefHeight="30.0" prefWidth="140.0" text="Book Checkout" />
+        <Button layoutX="21.0" layoutY="300.0" mnemonicParsing="false" onAction="#handleSearchBookTask" prefHeight="30.0" prefWidth="140.0" text="Search Book" />
+        <Button layoutX="21.0" layoutY="350.0" mnemonicParsing="false" onAction="#handleSearchOverdueBookTask" prefHeight="30.0" prefWidth="140.0" text="Search Overdue Book" />
+        <Button layoutX="21.0" layoutY="400.0" mnemonicParsing="false" onAction="#handleExitTask" prefHeight="30.0" prefWidth="140.0" text="Exit" />
+        <Pane fx:id="mainPane" layoutX="181.0" layoutY="100.0" prefHeight="393.0" prefWidth="600.0">
+          <children>
+            <ImageView fitHeight="263.9414367675781" fitWidth="511.5965688501261" layoutX="39.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@dashboard.jpg" />
+              </image>
+            </ImageView>
+          </children>
+        </Pane>
+      </children>
+    </Pane>
+  </children>
+</AnchorPane>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="350.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="business.MemberController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <TableView fx:id="memberTable" editable="true" prefHeight="350.0" prefWidth="600.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+      <columns>
+        <TableColumn prefWidth="75.0" text="Mem. ID" fx:id="memIDColumn" editable="true" />
+        <TableColumn prefWidth="82.0" text="First Name" fx:id="firstNameColumn" />
+        <TableColumn prefWidth="82.0" text="Last name" fx:id="lastNameColumn" />
+        <TableColumn prefWidth="75.0" text="Tel. No" fx:id="telephoneNumberColumn" />
+        <TableColumn prefWidth="75.0" text="Street" fx:id="streetColumn" />
+        <TableColumn prefWidth="75.0" text="City" fx:id="cityColumn" />
+        <TableColumn prefWidth="75.0" text="State" fx:id="stateColumn" />
+        <TableColumn prefWidth="50.0" text="Zip" fx:id="zipColumn" />
+      </columns>
+    </TableView>
+  </children>
+</AnchorPane>
